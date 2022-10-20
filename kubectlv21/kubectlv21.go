@@ -8,26 +8,25 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@aws-cdk/asset-kubectl-v21.KubectlAsset",
-		reflect.TypeOf((*KubectlAsset)(nil)).Elem(),
+		"@aws-cdk/lambda-layer-kubectl-v21.KubectlLayer",
+		reflect.TypeOf((*KubectlLayer)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "addResourceMetadata", GoMethod: "AddResourceMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "assetHash", GoGetter: "AssetHash"},
-			_jsii_.MemberProperty{JsiiProperty: "assetPath", GoGetter: "AssetPath"},
-			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
-			_jsii_.MemberMethod{JsiiMethod: "grantRead", GoMethod: "GrantRead"},
-			_jsii_.MemberProperty{JsiiProperty: "httpUrl", GoGetter: "HttpUrl"},
-			_jsii_.MemberProperty{JsiiProperty: "isFile", GoGetter: "IsFile"},
-			_jsii_.MemberProperty{JsiiProperty: "isZipArchive", GoGetter: "IsZipArchive"},
+			_jsii_.MemberMethod{JsiiMethod: "addPermission", GoMethod: "AddPermission"},
+			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "compatibleRuntimes", GoGetter: "CompatibleRuntimes"},
+			_jsii_.MemberProperty{JsiiProperty: "env", GoGetter: "Env"},
+			_jsii_.MemberMethod{JsiiMethod: "generatePhysicalName", GoMethod: "GeneratePhysicalName"},
+			_jsii_.MemberMethod{JsiiMethod: "getResourceArnAttribute", GoMethod: "GetResourceArnAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getResourceNameAttribute", GoMethod: "GetResourceNameAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "layerVersionArn", GoGetter: "LayerVersionArn"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "s3BucketName", GoGetter: "S3BucketName"},
-			_jsii_.MemberProperty{JsiiProperty: "s3ObjectKey", GoGetter: "S3ObjectKey"},
-			_jsii_.MemberProperty{JsiiProperty: "s3ObjectUrl", GoGetter: "S3ObjectUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "physicalName", GoGetter: "PhysicalName"},
+			_jsii_.MemberProperty{JsiiProperty: "stack", GoGetter: "Stack"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_KubectlAsset{}
-			_jsii_.InitJsiiProxy(&j.Type__awss3assetsAsset)
+			j := jsiiProxy_KubectlLayer{}
+			_jsii_.InitJsiiProxy(&j.Type__awslambdaLayerVersion)
 			return &j
 		},
 	)

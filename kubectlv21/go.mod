@@ -1,4 +1,4 @@
-module github.com/cdklabs/awscdk-asset-kubectl-go/kubectlv21
+module github.com/cdklabs/awscdk-kubectl-go/kubectlv21
 
 go 1.16
 

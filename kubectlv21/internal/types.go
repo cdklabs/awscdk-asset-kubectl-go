@@ -1,5 +1,5 @@
 package internal
 import (
-	"github.com/aws/aws-cdk-go/awscdk/v2/awss3assets"
+	"github.com/aws/aws-cdk-go/awscdk/v2/awslambda"
 )
-type Type__awss3assetsAsset = awss3assets.Asset
+type Type__awslambdaLayerVersion = awslambda.LayerVersion
