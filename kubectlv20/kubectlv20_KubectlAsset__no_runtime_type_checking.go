@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 // An Asset construct that contains kubectl, for use in Lambda Layers
 package kubectlv20
