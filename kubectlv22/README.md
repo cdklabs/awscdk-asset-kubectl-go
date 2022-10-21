@@ -3,7 +3,7 @@
 <!--BEGIN STABILITY BANNER-->---
 
 
-![cdk-constructs: Experimental](https://img.shields.io/badge/cdk--constructs-experimental-important.svg?style=for-the-badge)
+![cdk-constructs: Stable](https://img.shields.io/badge/cdk--constructs-stable-success.svg?style=for-the-badge)
 
 ---
 
@@ -12,7 +12,7 @@
 
 <!--END STABILITY BANNER-->
 
-This module exports a single class called `KubectlLayer` which is a `lambda.LayerVersion` that
+This module exports a single class called `KubectlV22Layer` which is a `lambda.LayerVersion` that
 bundles the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/kubectl/) and the
 [`helm`](https://helm.sh/) command line.
 
@@ -23,11 +23,11 @@ Usage:
 
 ```go
 // KubectlLayer bundles the 'kubectl' and 'helm' command lines
-import { KubectlLayer } from '@aws-cdk/lambda-layer-kubectl-v22';
+import { KubectlV22Layer } from '@aws-cdk/lambda-layer-kubectl-v22';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
 declare const fn: lambda.Function;
-const kubectl = new KubectlLayer(this, 'KubectlLayer');
+const kubectl = new KubectlV22Layer(this, 'KubectlLayer');
 fn.addLayers(kubectl);
 ```
 

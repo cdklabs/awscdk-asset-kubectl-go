@@ -8,8 +8,8 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@aws-cdk/lambda-layer-kubectl-v22.KubectlLayer",
-		reflect.TypeOf((*KubectlLayer)(nil)).Elem(),
+		"@aws-cdk/lambda-layer-kubectl-v22.KubectlV22Layer",
+		reflect.TypeOf((*KubectlV22Layer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addPermission", GoMethod: "AddPermission"},
 			_jsii_.MemberMethod{JsiiMethod: "applyRemovalPolicy", GoMethod: "ApplyRemovalPolicy"},
@@ -25,7 +25,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_KubectlLayer{}
+			j := jsiiProxy_KubectlV22Layer{}
 			_jsii_.InitJsiiProxy(&j.Type__awslambdaLayerVersion)
 			return &j
 		},
