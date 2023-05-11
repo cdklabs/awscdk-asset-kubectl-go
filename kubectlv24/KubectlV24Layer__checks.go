@@ -1,6 +1,5 @@
 //go:build !no_runtime_type_checking
 
-// A Lambda Layer that contains kubectl v1.24
 package kubectlv24
 
 import (
