@@ -13,7 +13,7 @@ import (
 	constructs "github.com/aws/constructs-go/constructs/v10/jsii"
 )
 
-//go:embed aws-cdk-lambda-layer-kubectl-v24-2.0.233.tgz
+//go:embed aws-cdk-lambda-layer-kubectl-v24-2.0.234.tgz
 var tarball []byte
 
 // Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
@@ -24,5 +24,5 @@ func Initialize() {
 	constructs.Initialize()
 
 	// Load this library into the kernel
-	_jsii_.Load("@aws-cdk/lambda-layer-kubectl-v24", "2.0.233", tarball)
+	_jsii_.Load("@aws-cdk/lambda-layer-kubectl-v24", "2.0.234", tarball)
 }
