@@ -1,3 +1,4 @@
+// A Lambda Layer that contains kubectl v1.26
 package kubectlv26
 
 import (
