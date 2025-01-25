@@ -19,7 +19,7 @@ Usage:
 
 ```go
 // KubectlLayer bundles the 'kubectl' and 'helm' command lines
-import { KubectlV31Layer } from '@aws-cdk/lambda-layer-kubectl-v29';
+import { KubectlV31Layer } from '@aws-cdk/lambda-layer-kubectl-v31';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
 declare const fn: lambda.Function;
